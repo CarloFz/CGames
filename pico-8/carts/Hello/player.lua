@@ -1,9 +1,11 @@
---player animation
+--player animation frames
 _player_ani_frames_start = 0; --player animation start sprite index
-_player_ani_frames_num = 1;
-_player_ani_frames_len = 10;
-_player_ani_frames_now = 0;
-_player_ani_frames_step = 0; --control animation frameRate. frame step: 0->frames len, then change animation frame.
+_player_ani_frames_num = 1; --player animation frames total count
+_player_ani_frames_now = 0; --current animation frame index: 0 -> frames count
+
+--player animation frame rate
+_player_ani_frames_len = 10; --every animation frame display frames count
+_player_ani_frames_step = 0; --frame step: 0 -> frames len, then change animation frame.
 
 
 --init player state
@@ -36,5 +38,5 @@ function player_draw()
             _player_ani_frames_now = 0; 
         end
     end
-    spr(_player_ani_frames_now, 0, 0);
+    spr(_player_ani_frames_now + _player_ani_frames_start, 0, 0);
 end
