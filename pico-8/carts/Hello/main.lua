@@ -10,3 +10,4 @@ function _draw()
     cls();
     player_draw();
 end
+-- test vecode.dev
