@@ -8,3 +8,5 @@
 /pico-8/config.txt
 /pico-8/log.txt
 /pico-8/activity_log.txt
+
+*.code-workspace
